@@ -8,7 +8,7 @@ public class Platform_Generator : MonoBehaviour {
     public float tiempoMin = 1.25f;
     public float tiempoMax = 2.5f;
 
-    public static bool called = false;
+    public bool called = false;
 
    
     private void Update(){
@@ -22,8 +22,11 @@ public class Platform_Generator : MonoBehaviour {
 
     
     void Generar(){
-       Instantiate(platforms[Random.Range(0, platforms.Length)], transform.position, Quaternion.identity);
-       Invoke("Generar", Random.Range(tiempoMin, tiempoMax));
-        
+        Instantiate(platforms[Random.Range(0, platforms.Length)], transform.position, Quaternion.identity);
+        Invoke("Generar", Random.Range(tiempoMin, tiempoMax));
+        if (Player_Control.inMovement == false) {
+            CancelInvoke();
+        }
+            
     }
 }

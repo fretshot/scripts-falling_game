@@ -5,8 +5,11 @@ using UnityEngine;
 public class Destroyer_Platforms : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D other){
-        if (other.tag == "Platform"){
+
+        //Make sure, add a Rigidbidy2D to the box collider, set gravity scale to 0 and make it Dinamic
+        if (other.tag == "Platform" || other.tag == "coinGold" || other.tag == "coinSilver" || other.tag == "coinBronze") {
             Destroy(other.gameObject);
         }
+                
     }
 }
