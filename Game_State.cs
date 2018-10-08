@@ -12,6 +12,7 @@ public class Game_State : MonoBehaviour {
     private String pathFile;
 
     void Awake(){
+        
         pathFile = Application.persistentDataPath + "/data.dat";
         if (game_state == null){
             game_state = this;
@@ -19,10 +20,12 @@ public class Game_State : MonoBehaviour {
         }else if (game_state != this){
             Destroy(gameObject);
         }
+        loadData();
     }
 
     void Start(){
-        loadData();
+        
+        
     }
 
 

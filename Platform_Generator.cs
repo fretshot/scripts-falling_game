@@ -22,8 +22,8 @@ public class Platform_Generator : MonoBehaviour {
 
     
     void Generar(){
-        Instantiate(platforms[Random.Range(0, platforms.Length)], transform.position, Quaternion.identity);
         Invoke("Generar", Random.Range(tiempoMin, tiempoMax));
+        Instantiate(platforms[Random.Range(0, platforms.Length)], transform.position, Quaternion.identity);
         if (Player_Control.inMovement == false) {
             CancelInvoke();
         }
