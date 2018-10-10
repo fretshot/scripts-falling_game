@@ -59,11 +59,13 @@ public class Score : MonoBehaviour {
             NotificationCenter.DefaultCenter().PostNotification(this, "increaseCameraSpeed", 4.4f);
         }
 
-        if (score > 200)
-        {
+        if (score > 200){
             NotificationCenter.DefaultCenter().PostNotification(this, "increaseCameraSpeed", 4.6f);
         }
 
+        if (score > 250){
+            NotificationCenter.DefaultCenter().PostNotification(this, "increaseCameraSpeed", 5.0f);
+        }
     }
 
     void updateScoreTextUI(){
