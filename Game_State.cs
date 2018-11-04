@@ -4,8 +4,10 @@ using UnityEngine;
 using System;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
+using UnityEngine.UI;
 
 public class Game_State : MonoBehaviour {
+
 
     public int maxScore = 0;
     public static Game_State game_state;
@@ -21,11 +23,6 @@ public class Game_State : MonoBehaviour {
             Destroy(gameObject);
         }
         loadData();
-    }
-
-    void Start(){
-        
-        
     }
 
 

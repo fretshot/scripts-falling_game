@@ -7,9 +7,14 @@ public class Player_Control : MonoBehaviour {
 
     public GameObject helpLayout;
 
+    public void Awake(){
+        inMovement = false;
+    }
+
     private void Start(){
         gameObject.GetComponent<Rigidbody2D>().freezeRotation = true;
-        
+        inMovement = false;
+
     }
 
     void Update(){

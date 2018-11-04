@@ -5,12 +5,12 @@ using UnityEngine;
 
 public class Admob_Inicializate : MonoBehaviour {
 
-    public void Start(){
+    public void Awake(){
 
         #if UNITY_ANDROID
-                string appId = "ca-app-pub-3940256099942544~3347511713";
+                string appId = "ca-app-pub-5248686580922732~5714592117";
         #elif UNITY_IPHONE
-                    string appId = "ca-app-pub-3940256099942544~1458002511";
+                    string appId = "ca-app-pub-5248686580922732~5714592117";
         #else
                     string appId = "unexpected_platform";
         #endif
