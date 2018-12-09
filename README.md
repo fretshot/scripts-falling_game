@@ -18,4 +18,4 @@ In general in these scripts there are the functionality of:
 ## Get the game and test
 ![Game](https://i.imgur.com/fT80fNf.png)
 
-If you want to try it, you can download fror your Android device: * [here](https://play.google.com/store/apps/details?id=com.infamous_software.falling_game)
+If you want to try it, you can download it for your Android device [here](https://play.google.com/store/apps/details?id=com.infamous_software.falling_game)
